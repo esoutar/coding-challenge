@@ -19,8 +19,6 @@
     </properties>
 
     <dependencies>
-        <!-- These are example dependencies that you can use - feel free to swap them for any other library that does the job! -->
-        <!--
         <dependency>
             <groupId>com.fasterxml.jackson.dataformat</groupId>
             <artifactId>jackson-dataformat-csv</artifactId>
@@ -31,9 +29,11 @@
             <artifactId>gson</artifactId>
             <version>${gson.version}</version>
         </dependency>
-        -->
-
-
+        <dependency>
+  		<groupId>commons-io</groupId>
+  			<artifactId>commons-io</artifactId>
+  			<version>2.6</version>
+		</dependency>
 
         <!-- Test dependencies -->
         <dependency>

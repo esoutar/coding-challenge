@@ -1,8 +1,6 @@
 package com.interset.interview;
 
-
-import java.io.IOException;
-import java.util.List;
+import java.io.File;
 
 public class Runner {
 
@@ -28,7 +26,10 @@ public class Runner {
             System.exit(1);
         }
 
-        System.out.println("Do cool stuff here!!");
+        String[] result = StatsApplication.getInstance().handleFile(new File(args[0]));
 
+        for(String s : result) {
+        	System.out.println(s);
+        }
     }
 }
